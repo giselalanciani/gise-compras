@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { MainBarComponent } from './main-bar/main-bar.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,9 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    MatIconModule,   
+    MatIconModule,
+    MatToolbarModule,   
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
