@@ -14,5 +14,9 @@ export class ProductListComponent {
   share () {
     alert('Product shared!');
   }
+
+  onNotify () {
+    alert('You will be notifed!')
+  }
 }
           
