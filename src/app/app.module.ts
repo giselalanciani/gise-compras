@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material/icon';
@@ -10,6 +11,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { CartComponent } from './cart-component/cart-component.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { ShippingComponent } from './shipping/shipping.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,9 +21,11 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
     ProductDetailComponent,
     CartComponent,
     ProductAlertsComponent,
+    ShippingComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule, 
     MatIconModule,
     MatToolbarModule,   
