@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CartService } from '../cart.service';
 import { Product, products } from '../products';
 
 @Component({
@@ -8,5 +9,10 @@ import { Product, products } from '../products';
 })
 export class ProductListComponent {
   productsList: Product[] = products;
+  
 
+  share () {
+    alert('Product shared!');
+  }
 }
+          

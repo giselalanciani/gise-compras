@@ -8,12 +8,16 @@ import { MainBarComponent } from './main-bar/main-bar.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { CartComponent } from './cart-component/cart-component.component';
+import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     MainBarComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    CartComponent,
+    ProductAlertsComponent,
   ],
   imports: [
     BrowserModule,
