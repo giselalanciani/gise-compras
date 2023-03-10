@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { CartComponent } from './cart-component/cart-component.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,10 +27,11 @@ import { ShippingComponent } from './shipping/shipping.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule, 
+    AppRoutingModule,
     MatIconModule,
-    MatToolbarModule,   
+    MatToolbarModule,
     MatButtonModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

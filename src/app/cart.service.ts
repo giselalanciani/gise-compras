@@ -7,19 +7,24 @@ import { Product } from './products';
 })
 export class CartService {
   items: Product[] = [];
+
+  constructor(private http: HttpClient) {}
+
   getShippingPrices() {
     return this.http.get<{ type: string; price: number }[]>(
       '/assets/shipping.json'
     );
   }
 
-  constructor(private http: HttpClient) {}
-
   addProduct(product: Product) {
     this.items.push(product);
   }
 
   getProducts(): Product[] {
+    return this.items;
+  }
+  clearCart() {
+    this.items = [];
     return this.items;
   }
 }
