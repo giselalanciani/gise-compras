@@ -13,6 +13,10 @@ import { CartComponent } from './cart-component/cart-component.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -28,12 +32,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
-    ReactiveFormsModule,
+
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

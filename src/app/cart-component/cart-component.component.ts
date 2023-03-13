@@ -19,6 +19,8 @@ export class CartComponent implements OnInit {
     private cartService: CartService,
     private formBuilder: FormBuilder
   ) {}
+
+
   onSubmit(): void {
     // Process checkout data here
     this.items = this.cartService.clearCart();
