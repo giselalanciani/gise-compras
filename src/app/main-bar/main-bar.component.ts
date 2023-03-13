@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-bar.component.scss']
 })
 export class MainBarComponent {
+menu: any;
 
 }
