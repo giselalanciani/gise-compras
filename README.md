@@ -1,6 +1,8 @@
 # GiseCompras
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
+Este es mi primer proyecto hecho con angular. Tutorial d la pagina de Angular oficial. https://angular.io/start
+
+Creacion de un shopping cart, e-commerce site with a catalog, shopping cart, and check-out form
 
 ## Development server
 
